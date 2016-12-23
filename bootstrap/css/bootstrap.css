@@ -5,8 +5,8 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=826172ec4b6ded3e3acb8516135712d6)
- * Config saved to config.json and https://gist.github.com/826172ec4b6ded3e3acb8516135712d6
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=87d6baad1a76cf980a0717ea48755aa0)
+ * Config saved to config.json and https://gist.github.com/87d6baad1a76cf980a0717ea48755aa0
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -1091,7 +1091,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #ffffff;
+  color: #f5f5f5;
   background-color: #222222;
 }
 input,
@@ -5028,7 +5028,7 @@ a.thumbnail.active {
 }
 .thumbnail .caption {
   padding: 9px;
-  color: #ffffff;
+  color: #f5f5f5;
 }
 .alert {
   padding: 15px;
