@@ -13,7 +13,7 @@
     "@brand-danger": "#d9534f",
     "@body-bg": "#222",
     "@text-color": "#f8f8f8",
-    "@link-color": "#55b",
+    "@link-color": "#57c",
     "@link-hover-color": "darken(@link-color, 15%)",
     "@link-hover-decoration": "underline",
     "@font-family-sans-serif": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
@@ -431,5 +431,5 @@
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=90106c839643b64691d4d9f645a36672"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=c844259e24520a82f1bcd2535d69c36f"
 }
