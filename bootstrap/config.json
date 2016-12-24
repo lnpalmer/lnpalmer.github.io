@@ -362,12 +362,12 @@
     "@close-color": "#000",
     "@close-text-shadow": "0 1px 0 #fff",
     "@code-color": "#c7254e",
-    "@code-bg": "#f9f2f4",
+    "@code-bg": "#444",
     "@kbd-color": "#fff",
     "@kbd-bg": "#333",
-    "@pre-bg": "#333",
+    "@pre-bg": "#444",
     "@pre-color": "#fff",
-    "@pre-border-color": "#ccc",
+    "@pre-border-color": "#333",
     "@pre-scrollable-max-height": "340px",
     "@component-offset-horizontal": "180px",
     "@text-muted": "@gray-light",
@@ -431,5 +431,5 @@
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=037917ee93f8c35dcd082d95eb4c25bd"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=2c3ac84c19d00aa4dda663a652f5fc32"
 }
