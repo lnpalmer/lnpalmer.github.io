@@ -18,6 +18,8 @@
 
 .highlight {
   color: #C1C2C3;
+  word-wrap: normal;
+  overflow: auto;
 }
 
 .highlight .hll { background-color: #ffc; }
