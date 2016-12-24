@@ -5,8 +5,8 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=2c3ac84c19d00aa4dda663a652f5fc32)
- * Config saved to config.json and https://gist.github.com/2c3ac84c19d00aa4dda663a652f5fc32
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=8d25a86fc1f6830fa3a8a273aa783318)
+ * Config saved to config.json and https://gist.github.com/8d25a86fc1f6830fa3a8a273aa783318
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -1543,7 +1543,7 @@ code {
   padding: 2px 4px;
   font-size: 90%;
   color: #c7254e;
-  background-color: #444444;
+  background-color: #656565;
   border-radius: 4px;
 }
 kbd {
@@ -1571,8 +1571,8 @@ pre {
   word-break: break-all;
   word-wrap: break-word;
   color: #ffffff;
-  background-color: #444444;
-  border: 1px solid #333333;
+  background-color: #222222;
+  border: 1px solid #222222;
   border-radius: 4px;
 }
 pre code {
