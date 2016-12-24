@@ -1,5 +1,6 @@
 url: "https://lnpalmer.github.io"
 markdown: kramdown
+
 highlighter: rouge
 kramdown:
   input: GFM
