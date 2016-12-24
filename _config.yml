@@ -1,2 +1,5 @@
 theme: jekyll-theme-cayman
 url: "https://lnpalmer.github.io"
+markdown: kramdown
+permalink: pretty
+highlighter: rouge
