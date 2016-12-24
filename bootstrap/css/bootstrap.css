@@ -5,8 +5,8 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=d8ceae0d4bbb9ee75918a459ab0b4616)
- * Config saved to config.json and https://gist.github.com/d8ceae0d4bbb9ee75918a459ab0b4616
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=90106c839643b64691d4d9f645a36672)
+ * Config saved to config.json and https://gist.github.com/90106c839643b64691d4d9f645a36672
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -1103,12 +1103,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #222222;
+  color: #5555bb;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #000000;
+  color: #38388c;
   text-decoration: underline;
 }
 a:focus {
@@ -3405,7 +3405,7 @@ fieldset[disabled] .btn-danger.focus {
   background-color: #ffffff;
 }
 .btn-link {
-  color: #222222;
+  color: #5555bb;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3426,7 +3426,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #000000;
+  color: #38388c;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4010,7 +4010,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #222222;
+  border-color: #5555bb;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4730,7 +4730,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #222222;
+  color: #5555bb;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   margin-left: -1px;
@@ -4751,7 +4751,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #000000;
+  color: #38388c;
   background-color: #eeeeee;
   border-color: #dddddd;
 }
@@ -4949,7 +4949,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #222222;
+  color: #5555bb;
   background-color: #ffffff;
 }
 .list-group-item > .badge {
@@ -5024,7 +5024,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #222222;
+  border-color: #5555bb;
 }
 .thumbnail .caption {
   padding: 9px;
