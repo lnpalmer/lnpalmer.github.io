@@ -21,8 +21,9 @@
 }
 
 code {
-  word-wrap: normal;
+  white-space: pre;
   overflow: auto;
+  word-wrap: normal;
 }
 
 .highlight .hll { background-color: #ffc; }
