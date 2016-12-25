@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="{{ site.url }}/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ site.url }}/darkly.css">
-    <title>{{ page.title }}</title>
+    <title>Lukas Palmer / Blog</title>
 </head>
 <body>
   <nav class="navbar navbar-fixed-top navbar-full" style="background-color: #f8f8f8;">
@@ -20,9 +20,18 @@
     <div class="row">
       <div class="col-md-2"></div>
       <div class="col-md-8">
-        <h2>{{ page.title }}</h2>
+        <h2>Recent Posts</h2>
         <hr />
-        {{ content }}
+        <ul>
+          {% for post in posts %}
+            {% if post.tags contains t %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+              <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
+            </li>
+            {% endif %}
+          {% endfor %}
+          </ul>
         <br />
         <br />
         {{ site.time }}
