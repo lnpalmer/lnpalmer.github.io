@@ -18,6 +18,9 @@
 
 .highlight {
   color: #C1C2C3;
+}
+
+code {
   word-wrap: normal;
   overflow: auto;
 }
