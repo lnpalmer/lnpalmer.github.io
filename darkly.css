@@ -18,6 +18,15 @@
 
 .highlight {
   color: #C1C2C3;
+  white-space: pre;
+  overflow: auto;
+  word-wrap: normal;
+}
+
+pre {
+  white-space: pre;
+  overflow: auto;
+  word-wrap: normal;
 }
 
 code {
