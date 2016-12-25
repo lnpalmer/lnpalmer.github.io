@@ -16,21 +16,8 @@
   color: #C1C2C3;
 }*/
 
-.highlight {
-  color: #C1C2C3;
-}
-
-.highlight pre code * {
-  white-space: nowrap;    // this sets all children inside to nowrap
-}
-
-.highlight pre {
-  overflow-x: auto;       // this sets the scrolling in x
-}
-
-.highlight pre code {
-  white-space: pre;       // forces <code> to respect <pre> formatting
-}
+.highlight .code pre { border: none; white-space: pre; overflow-x: auto; word-wrap: normal; }
+.highlight code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; }
 
 .highlight .hll { background-color: #ffc; }
 .highlight .gd { color: #2e3436; background-color: #0e1416; }
