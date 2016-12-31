@@ -40,10 +40,12 @@ layout: null
         <h2>Recent posts</h2>
         <hr />
         {% for post in site.posts %}
-          <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-          <p>{{ post.excerpt }}</p>
-          <p><i> {{ post.date | date: "%B %-d, %Y" }} </i></p>
-          <hr />
+          {% if post.ready %}
+            <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+            <p>{{ post.excerpt }}</p>
+            <p><i> {{ post.date | date: "%B %-d, %Y" }} </i></p>
+            <hr />
+          {% endif %}
         {% endfor %}
         <small class="text-muted">Generated {{ site.time }}</small>
       </div>
