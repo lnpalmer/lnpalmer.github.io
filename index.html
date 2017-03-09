@@ -1,131 +1,58 @@
-﻿<!DOCTYPE html>
+---
+layout: null
+---
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-79834876-2', 'auto');
-        ga('send', 'pageview');
-    </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-79834876-2', 'auto');
+    ga('send', 'pageview');
+  </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Lukas Palmer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="{{ site.url }}/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ site.url }}/darkly.css">
+  <title>Lukas Palmer / Blog</title>
 </head>
-<body onload="setup()">
-    <nav class="navbar navbar-dark navbar-full navbar-fixed-top bg-inverse">
-        <a class="navbar-brand" href="#">Lukas Palmer</a>
-        <div class="nav navbar-nav">
-            <a class="nav-item nav-link" href="#" id="aboutNav">About</a>
-            <a class="nav-item nav-link" href="#" id="projectsNav">Projects</a>
-            <a class="hideSmall nav-item nav-link" href="http://lnpalmer.github.io/blog.html">Blog </a>
-            <a class="hideSmall btn btn-success-outline pull-xs-right" href="mailto:lukas.palmer.dev@gmail.com">Contact</a>
-        </div>
-    </nav>
+<body>
+  <nav class="navbar navbar-fixed-top navbar-full" style="background-color: #f8f8f8;">
+    <span class="navbar-brand" style="color: #222;">
+      <a href="http://lukasnpalmer.com" style="color: #222;">Lukas Palmer</a>
+       /
+      <a href="http://lnpalmer.github.io" style="color: #222;">Blog</a>
+    </span>
+  </nav>
 
-    <br />
-    <br />
-    <br />
+  <br />
+  <br />
+  <br />
 
-    <div class="container" id="aboutModule" style="display: none; opacity: 0;">
-        <div class="row">
-            <div class="col-md-8">
-                <h4>About me</h4>
-                <hr />
-                <p>
-                    For the past few years I've been learning about computer science and software development.
-                    I dabbled in a few fields and then studied game development for a couple years;
-                    I only released one complete game but along the way learned a lot about graphics, parallel processing, GPUs, and general design principles.
-                    I recently took an interest in deep learning and have been shifting towards hands-on work with neural nets.
-                    I interned at Hyland Software over the summer of 2016; I worked in the development department and completed several software projects.
-                    I'm majoring in computer science at Ohio University (class of 2020).
-                    <br />
-                    <br />
-                    During my game development work, I used OpenGL and other 3D graphics APIs along with several game engines.
-                    Languages I use for game development include Lua and C# inside engine environments, and C++ and JavaScript (CoffeeScript) on their own.
-                    Using the Defold engine I made <a href="http://lukaspalmer.itch.io/labyrinth">Labyrinth</a>, a minimal, retro dungeon crawler with a procedural map and a lot of focus on UI design.
-                    <br />
-                    <br />
-                    I've been studying deep learning for the past few months. To strengthen my understanding of neural networks both in theory and in practice, I'm working on <a href="https://github.com/lnpalmer/rnet">rnet</a>, a simple program that uses a recurrent neural network to build a character-level language model based on an input text file.
-                    The entire program is written from scratch in C++; GPU acceleration is done with OpenCL.
-                </p>
-            </div>
-            <div class="col-md-4">
-                <h4>Social</h4>
-                <hr />
-                <a class="twitter-follow-button" href="https://twitter.com/lukaspalmerdev" data-size="large">Follow @lukaspalmerdev</a>
-
-                <!-- Place this tag where you want the button to render. -->
-                <a class="github-button" href="https://github.com/lnpalmer" data-style="mega" data-count-href="/lnpalmer/followers" data-count-api="/users/lnpalmer#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @lnpalmer on GitHub">Follow @lnpalmer</a>
-
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <h2>Recent posts</h2>
+        <hr />
+        {% for post in site.posts %}
+          {% if post.ready %}
+            <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+            <p>{{ post.excerpt }}</p>
+            <p><i> {{ post.date | date: "%B %-d, %Y" }} </i></p>
+            <hr />
+          {% endif %}
+        {% endfor %}
+        <small class="text-muted">Generated {{ site.time }}</small>
+      </div>
+      <div class="col-md-2"></div>
     </div>
+  </div>
 
-    <div class="container" id="projectsModule" style="display: none;">
-        <div class="row">
-            <div class="col-md-12">
-                <h4>Projects</h4>
-                <hr />
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="card card-inverse" style="background-color: #333; border-color: #333;">
-                    <img class="card-img-top img-fluid" src="assets/Neuricon.png" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title"><a href="http://github.com/lnpalmer/rnet">rnet</a></h4>
-                        <p class="card-text">A learning experience with recurrent neural networks.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card card-inverse" style="background-color: #333; border-color: #333;">
-                    <img class="card-img-top img-fluid" src="assets/labyrinth.png" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title"><a href="https://forum.defold.com/t/labyrinth-a-hack-and-slash-with-a-shifting-map/1361/78">Labyrinth</a></h4>
-                        <p class="card-text">A 2D dungeon crawler using Lua and the Defold engine.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/urljs/1.2.0/url.min.js"></script>
-
-    <script src="assets/coffee/main.js"></script>
-    <script src="assets/coffee/events.js"></script>
-    <script src="assets/coffee/AboutModule.js"></script>
-    <script src="assets/coffee/ProjectsModule.js"></script>
-
-    <!-- Twitter widgets -->
-    <script>
-        window.twttr = (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0],
-              t = window.twttr || {};
-            if (d.getElementById(id)) return t;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://platform.twitter.com/widgets.js";
-            fjs.parentNode.insertBefore(js, fjs);
-
-            t._e = [];
-            t.ready = function (f) {
-                t._e.push(f);
-            };
-
-            return t;
-        }(document, "script", "twitter-wjs"));
-    </script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script src="{{ site.url }}/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
