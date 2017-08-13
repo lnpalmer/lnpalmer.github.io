@@ -18,14 +18,14 @@ layout: null
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="{{ site.url }}/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{ site.url }}/darkly.css">
-  <title>Lukas Palmer / Blog</title>
+  <title>lnpalmer / blog</title>
 </head>
 <body>
   <nav class="navbar navbar-fixed-top navbar-full" style="background-color: #f8f8f8;">
     <span class="navbar-brand" style="color: #222;">
-      <a href="http://lukasnpalmer.com" style="color: #222;">Lukas Palmer</a>
+      <a href="http://lukasnpalmer.com" style="color: #222;">lnpalmer</a>
        /
-      <a href="http://lnpalmer.github.io" style="color: #222;">Blog</a>
+      <a href="http://lnpalmer.github.io" style="color: #222;">blog</a>
     </span>
   </nav>
 
@@ -41,7 +41,8 @@ layout: null
         <hr />
         {% for post in site.posts %}
           {% if post.ready %}
-            <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+            {% assign url = '.' | append: post.url %}
+            <a href="{{ url }}"><h3>{{ post.title }}</h3></a>
             <p>{{ post.excerpt }}</p>
             <p><i> {{ post.date | date: "%B %-d, %Y" }} </i></p>
             <hr />
